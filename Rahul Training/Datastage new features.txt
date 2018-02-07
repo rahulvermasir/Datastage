@@ -1,0 +1,74 @@
+New in DataStage 9.1
+ 
+IBM are investing in Productivity, Transformation, Connectivity, Performance, Operations and Administration.
+1.	Productivity
+1.	XML Schema views – narrow the scope of the schema tree to enhance the design experience and improve the efficiency of the parsing and composing process.  Greatly simplifies the handling of large XML schemas.  Add capability to map/model XML documents that have recursive structures within the XSD.  New intuitive view construct for XSD to allow the user to define subsets of schemas.
+2.	Rational Team Concert integration – Extends the certification of asset interchange integration with source control systems to now include RTC.  Full RTC integration beyond the basic Team plugin support.  Check in, check out, ClearCase search, compare with predecessor, show history etc.
+3.	InfoSphere Data Click – Lets a novice user load a Netezza data mart in 2 clicks from databases or MDM sources.
+2.	Transformation
+1.	New transformation expressions – enhanced string functions such as “ereplace” and “change” in the parallel transformer for better handling of string functions.
+2.	IBM Operational Decision Management Integration – Direct integration with ODM (formerly known as iLog JRules) to provide unique rules management within DataStage and QualityStage.  Business users directly control the logic.
+3.	Dynamic File Creation – New “Generate Multiple Files” property of Sequential File Stage drives a dynamic number of output files based on data values without needing multiple output stages.
+3.	Connectivity
+1.	Java Integration Stage – second generation of this stage provides simpler access to Java code.  Makes it easier to use Java classes and access new NoSQL data sources.  JavaBean methods, discovery interface to view classes and scale Java across the parallel engine.
+2.	InfoSphere Streams Integration – the direct flow of data between InfoSphere Streams and DataStage to combine the power and reach of both platforms.
+3.	Native Excel Access – New stage provides direct Excel read capabilities on all platforms with a rich set of features to handle ranges, multiple worksheets, unstructured text and more.
+4.	Performance
+1.	DBMS Connector Boost –= Performance optimisation includes new “big buffer” optimizations that increase the performance of Bulk Load to DB2 and Oracle by as much as 50%.
+2.	Balanced Optimizer for Hadoop – Allows the push down of DataStage processing onto Hadoop.  Balance processing across massively parallel DataStage and Hadoop servers.
+3.	Balanced Optimization for DB2 z/OS – Extends the ELT processing to z/OS based warehouses.
+4.	Streamlined Windows Processes – boosts performance and reduces overhead on Windows by moving MKS emulation onto native process forking APIs to increase scalability on Windows and removing resource layers in that delivery.
+5.	Operations
+1.	Enhanced Operations Console features – Full log display including job run details.  Complete job run analysis and run, stop and reset actions.
+2.	Pre-built Operations Analytical Reports – pre-built Cognos BI reports against the rich operation metadata.  Can be translated to other BI tools.
+3.	Workload Management – set policies in a shared service environment indicating job run thresholds and priority queues to optimize system performance.
+6.	Administration
+1.	PureSystems Private Cloud – rapidly deploy an optimized environment with Information Server Enterprise Edition now available on a Private Cloud with improved workload management.
+2.	Migration User Interface – reduce the time and effort of an upgrade to a new version with a New Migration Assistant Export Wizard guiding the user through an interview and collecting information to drive the migration.
+3.	New Support Features – expediting investigation with stack traces for windows, linux and AIX.  New DataStage run time trouble shooting guides for easier diagnosis and resolution of common issues.
+ 
+New in other Information Server Products
+ 
+There is a focus on Policy Driven Governance and Data Quality improvements.
+ 
+1.	Business Glossary
+1.	New entity types of Governance Policies and Rules.  These are similar to Terms but have their own custom attributes and a direct relationship between Policies to Rules to Information Analyzer Rule objects.
+2.	Advanced Term Relationships – a term can now have sub types, indicating a recursive, multi-hierarchy supertype of terms.  New relationships between terms for “Is a Type Of”, “Has Types” and “Has A”.
+3.	Support drag and drop of Business Glossary terms to Rational Business Process Modelling environments for element creation and term assignment.
+4.	Added OSLC (Open Services for Lifestyle Collaboration) support is a web service that lets Business Glossary display information from external OSLC compliant sources such as Rational Asset Manager and Rational System Architect.  Atlassian JIRA, Borland Star Team, CA Clarity, HP Quality Center, IBM Rational, Microsoft Sharepoint and Salesforce are OSLC compatible software.
+5.	New User Interface – menus moved from the left hand pane to a more intuitive drop down menu system with greater space for Glossary entries.
+6.	Improved security authentication with SPNEGO for Active Directory and Kerboros for Windows credentials.
+2.	Metadata Workbench
+1.	Automated Services Optimization – performs linking on only changes in projects.  Does not unlinked unselected projects.
+2.	Additional support for new DataStage stages such as Information Analyzer rules stage, Big Data File Stage, Java Rule Stage, Streams Stage and Streams End Point Assets.
+3.	Information Analyzer
+1.	New nesting of Data Quality rules – can now name and reuse the output tables of Information Analyzer rules for re-use of results between sets of rules.
+2.	Ability to sequence data validation rules.
+3.	Advanced web-based data validation rule display including data lineage and impact analysis reporting across rules.
+4.	Over 100 predefined data quality rules now bundled with the installation.
+4.	QualityStage
+1.	New Address Verification Module – superior GeoCoding support for 240 countries, improved verification, works with previous versions, bi-directional Transliteration support.
+2.	New Standardisation Rule Designer – makes it easier to enter standardisation rules for unstructured text fields such as names and addresses.  Provides a richer user interface over the existing QualityStage pattern and rules language.  Lets a team collaborate on advanced rules.
+5.	New InfoSphere Data Quality Console
+1.	A new web based dashboard for Data Quality reporting and exception management.  View DQ exceptions by priority, status, IT asset.  View exception data and assign an owner to investigate.  View the data quality rules and exception data.
+2.	Handles exceptions from Information Analyzer rules for steward review.  Handles exception records from QualityStage matching rules for clerical review.
+6.	Discovery
+1.	Complete globalization support added.
+2.	Now supports Red hat and AIX for the Server tier and is 64 bit compatible.
+3.	Enhancements for life cycle and test data management integration with Optim products.
+ 
+Platform Support
+ 
+There is also InfoSphere Information Server V9.1 detailed system requirements for looking up the operating system requirements including version and patch level and required libraries.
+ 
+The following platforms and versions are supported for Information Server software on the engine or services tier:
+•	Red Hat Enterprise Linux version 5 and 6.
+•	SUSE Linux Enterprise Server version 10 and 11.
+•	AIX 6.1 and 7.1 POWER  System
+•	HP-UX 11i v3 IA 64
+•	Solaris 10 SPARC
+•	Windows Server 2008 various editions.
+ 
+For the Client Desktop software (required for DataStage, Information Analyzer, FastTrack) the following Windows environments are certified:
+ 
+Windows Server 2008, Windows 7 (Enterprise, Professional or Ultimate). Windows XP Professional, Windows Vista Professional.
